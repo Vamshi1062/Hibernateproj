@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	<hibernate-configuration>
+		<session-factory>
+			<property name="connection.driver_class">
+				org.postgresql.Driver
+			</property>
+			<property name="connection.url">
+				jdbc:postgresql://localhost:5432/myhiber
+			</property>
+			<property name="connection.username">
+				postgres
+			</property>
+			<property name="connection.password">
+				Vamshi@1062
+			</property>
+			<property name="dialect">
+				org.hibernate.dialect.PostgreSQLDialect
+			</property>
+			<property name="hbm2ddl.auto">
+				create
+			</property>
+			<property name="show_sql">
+				true
+			</property>
+			<mapping class="cgginterns.hibernate.Student" />
+			<mapping class="cgginterns.hibernate.Address" />
+			<mapping class="cgginterns.hibernate.map1.Question" />
+			<mapping class="cgginterns.hibernate.map1.Answer" />
+			<mapping class="cgginterns.hibernate.map1.Brand" />
+			<mapping class="cgginterns.hibernate.map1.Product" />
+			<mapping class="cgginterns.hibernate.map2.Employee" />
+			<mapping class="cgginterns.hibernate.map2.Project" />
+		</session-factory>
+		 
+	</hibernate-configuration>

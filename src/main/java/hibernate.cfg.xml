@@ -36,6 +36,8 @@
 			<mapping class="cgginterns.hibernate.map1.Product" />
 			<mapping class="cgginterns.hibernate.map2.Employee" />
 			<mapping class="cgginterns.hibernate.map2.Project" />
+			<mapping class="cgginterns.hibernate.student.StudentManage" />
+			<mapping class="cgginterns.hibernate.student.StudentManagement" />
 		</session-factory>
 		 
 	</hibernate-configuration>
